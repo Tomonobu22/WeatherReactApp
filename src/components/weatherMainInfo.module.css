@@ -1,0 +1,12 @@
+.description{
+	text-transform: capitalize;
+}
+
+.imganddescription {
+	display: flex;
+	align-items: center;
+}
+
+.weather.loading {
+	visibility: hidden;
+}
