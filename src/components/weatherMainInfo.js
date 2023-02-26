@@ -16,8 +16,8 @@ function WeatherMainInfo({ weather }) {
             <iframe 
                 title="map"
                 src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d37499.38193705278!2d${weather?.coord.lon}!3d${weather?.coord.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sca!4v1677089889189!5m2!1ses!2sca`} 
-                width="600" 
-                height="450" 
+                width="400"
+                height="300" 
                 style={{ border:0 }} 
                 allowfullscreen="" 
                 loading="lazy" 
@@ -25,10 +25,6 @@ function WeatherMainInfo({ weather }) {
             </iframe>
         </div>
     </div>
-
-    
-        // document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?"+name+"')";
-
 }
 
 export default WeatherMainInfo

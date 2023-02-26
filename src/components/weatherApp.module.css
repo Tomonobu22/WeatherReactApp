@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
 .card {
 	background-color: rgba(0, 0, 0, 0.802);
 	color: white;
@@ -6,4 +8,17 @@
 	width: 100%;
 	max-width: 420px;
 	margin: 1em;
+}
+
+.back {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;	
+	background-color:gray;
+	background-size: cover;
+	font-size: 120%;
+	font-family: 'Play', sans-serif;
 }
