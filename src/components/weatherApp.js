@@ -20,10 +20,7 @@ function WeatherApp() {
         try {
             const request = await fetch(`${process.env.REACT_APP_URL}${city}&units=metric&appid=${process.env.REACT_APP_KEY}`)
             const json = await request.json()
-            setTimeout(() => {
-                setWeather(json)
-            }, 6000)
-            
+            setWeather(json)
         } catch(error){ console.log('ERROR')}
     }
 

@@ -10,3 +10,13 @@
 .weather.loading {
 	visibility: hidden;
 }
+
+.data {
+	font-size: 0.7em;
+}
+
+.map {
+	margin-top: 12px;
+	border-radius: 12px;
+}
+
