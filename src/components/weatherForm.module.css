@@ -31,3 +31,12 @@
 	font-family: inherit;
 	width: calc(100% - 100px);	
 }
+
+.popupError {
+	position: absolute;
+	background: #dc3545;
+	color: white;
+	padding: 6px 10px;
+	border-radius: 4px;
+	font-size: 0.85rem;
+}

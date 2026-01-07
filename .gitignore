@@ -21,16 +21,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-/.vs/WeatherReactApp/v17/DocumentLayout.json
-/.vs/slnx.sqlite
-/.vs/VSWorkspaceState.json
-/.vs/WeatherReactApp/CopilotIndices/17.14.1347.20289/CodeChunks.db
-/.vs/WeatherReactApp/CopilotIndices/17.14.1347.20289/CodeChunks.db-shm
-/.vs/WeatherReactApp/CopilotIndices/17.14.1347.20289/CodeChunks.db-wal
-/.vs/WeatherReactApp/CopilotIndices/17.14.1347.20289/SemanticSymbols.db
-/.vs/WeatherReactApp/CopilotIndices/17.14.1347.20289/SemanticSymbols.db-shm
-/.vs/WeatherReactApp/CopilotIndices/17.14.1347.20289/SemanticSymbols.db-wal
-/.vs/WeatherReactApp/FileContentIndex/05f8c187-96f0-46c5-96db-60a716aa4ea6.vsidx
-/.vs/WeatherReactApp/v17/.wsuo
-/.vs/WeatherReactApp/v17/DocumentLayout.backup.json
-/.vs/WeatherReactApp/FileContentIndex/81007235-3087-4b76-89f6-56e6965b6a99.vsidx
+/.vs/
