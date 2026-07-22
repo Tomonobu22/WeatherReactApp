@@ -1,22 +1,32 @@
-.description{
-	text-transform: capitalize;
+.mainWeather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
-.imganddescription {
-	display: flex;
-	align-items: center;
+.city {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.weather.loading {
-	visibility: hidden;
+.mainWeather h1 {
+	margin: 0;
+}
+
+.description {
+    text-transform: capitalize;
 }
 
 .data {
 	font-size: 0.7em;
 }
 
-.map {
-	margin-top: 12px;
-	border-radius: 12px;
+
+.description {
+	text-transform: capitalize;
 }
 
+.weather.loading {
+	visibility: hidden;
+}

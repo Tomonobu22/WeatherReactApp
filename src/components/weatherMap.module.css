@@ -1,0 +1,12 @@
+.description {
+    text-transform: capitalize;
+}
+
+.weather.loading {
+    visibility: hidden;
+}
+
+.map {
+    margin-top: 12px;
+    border-radius: 12px;
+}
