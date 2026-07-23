@@ -9,14 +9,14 @@ import styles from './weatherApp.module.css'
 
 function WeatherApp() {
 
-    const { weather, error, loading, loadInfo, clearError } = useWeather();
+    const { weather, error, loading, loadInfo, backgroundImage, clearError } = useWeather();
 
     useEffect(() => {
         document.title = `Weather | ${weather?.city ?? ''}`
     }, [weather]) // run on the first render and any timy any dependecy value changes
 
     return (
-        <div className={styles.back} style={{ backgroundImage: `url(https://source.unsplash.com/1600x900/?${weather?.city ?? 'landscape'})` }}>
+        <div className={styles.back} style={{ backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none' }}>
             <div className={styles.card}>
                 <WeatherForm onChangeCity={loadInfo} error={error} clearError={clearError} />
                 {loading ? <Loading /> : weather && <WeatherMainInfo weather={weather}/>}
