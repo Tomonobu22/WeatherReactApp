@@ -8,6 +8,7 @@ export function useWeather() {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
     const [backgroundImage, setBackgroundImage] = useState(null);
+    const [image, setImage] = useState(null);
 
     const loadInfo = useCallback(async (city = "london") => {
         try {
@@ -18,7 +19,10 @@ export function useWeather() {
             if (json.cod === 200) {
                 setWeather(createWeatherModel(json));
                 const image = await fetchBackgroundImage(city);
-                setBackgroundImage(image);
+                setBackgroundImage(image.urls.regular);
+                setImage(image);
+                // Tell Unsplash the photo was used
+                fetch(image.links.download_location);
             }
             else {
                 setError("City not found");
@@ -44,7 +48,7 @@ export function useWeather() {
 
             if (response.ok) {
                 const data = await response.json();
-                return data.urls.regular;
+                return data;
             } else {
                 return null;
             }
@@ -65,6 +69,7 @@ export function useWeather() {
         loading,
         loadInfo,
         backgroundImage,
+        image,
         clearError: () => setError(null)
     };
 }

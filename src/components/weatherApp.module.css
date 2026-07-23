@@ -19,3 +19,18 @@
 	background-size: cover;
 	font-size: 120%;
 }
+
+.photoCredit {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	color: white;
+	font-size: 0.8rem;
+	background: rgba(0,0,0,0.4);
+	padding: 6px 10px;
+	border-radius: 5px;
+}
+
+.photoCredit a {
+	color: white;
+}
