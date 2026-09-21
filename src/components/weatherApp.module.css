@@ -1,36 +1,51 @@
 .card {
-	background-color: rgba(0, 0, 0, 0.802);
-	color: white;
-	padding: 2em;
-	border-radius: 30px;
+	background: var(--card);
+	color: var(--text);
+	padding: 1.5rem;
+	border-radius: var(--radius);
 	width: 100%;
-	max-width: 420px;
-	margin: 1em;
+	max-width: 480px;
+	margin: 1rem;
+	box-shadow: 0 18px 50px rgba(2,6,23,0.6);
+	position: relative;
+	z-index: 2;
 }
 
 .back {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
-	margin: 0px;
-	font-family: 'Open Sans', sans-serif;	
-	background-color:gray;
+	min-height: 100vh;
+	margin: 0;
+	padding: 2rem;
+	font-size: 100%;
 	background-size: cover;
-	font-size: 120%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* dark overlay so content is readable on top of background image */
+.back::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(180deg, rgba(3,6,16,0.55), rgba(3,6,16,0.75));
+	z-index: 1;
+	pointer-events: none;
 }
 
 .photoCredit {
 	position: absolute;
-	bottom: 15px;
-	right: 15px;
-	color: white;
+	bottom: 12px;
+	right: 12px;
+	color: var(--muted);
 	font-size: 0.8rem;
-	background: rgba(0,0,0,0.4);
+	background: rgba(0,0,0,0.45);
 	padding: 6px 10px;
-	border-radius: 5px;
+	border-radius: 6px;
+	box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+	z-index: 3;
 }
 
-.photoCredit a {
-	color: white;
-}
+.photoCredit a { color: var(--muted); }

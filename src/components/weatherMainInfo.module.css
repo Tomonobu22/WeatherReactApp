@@ -1,32 +1,21 @@
 .mainWeather {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
 }
 
 .city {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.15rem;
 }
 
-.mainWeather h1 {
-	margin: 0;
-}
+.mainWeather h1 { margin: 0; }
 
-.description {
-    text-transform: capitalize;
-}
+.description { text-transform: capitalize; color: var(--muted); }
 
-.data {
-	font-size: 0.7em;
-}
+.data { font-size: 0.85rem; color: var(--muted); }
 
-
-.description {
-	text-transform: capitalize;
-}
-
-.weather.loading {
-	visibility: hidden;
-}
+.weather.loading { visibility: hidden; }

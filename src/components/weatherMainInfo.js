@@ -14,7 +14,7 @@ function WeatherMainInfo({ weather }) {
             {`Feels like: ${Math.round(weather?.feelsLike)}°C`}
         </div>
         <div className={styles.data}>{`Humidity: ${weather?.humidity}%`}</div>
-        <div className={styles.data}>{`Wind Speed: ${weather?.windspeed} km/h`}</div>
+        <div className={styles.data}>{`Wind Speed: ${weather?.windspeedKmh ?? Math.round((weather?.windspeed || 0) * 3.6)} km/h`}</div>
     </div>
 }
 
